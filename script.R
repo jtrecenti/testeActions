@@ -3,6 +3,7 @@ paste0(
   "# testeActions\n",
   "\n",
   "Date: ", Sys.time(),
-  "\n"
+  "\n",
+  "New: ", sample(ggplot2::diamonds$color, 1)
 ) |>
   cat(file = "README.md")
